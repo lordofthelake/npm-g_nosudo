@@ -69,8 +69,6 @@ fi
 defaultnpmdir="${HOME}/.npm-packages"
 npmdir=''
 
-read -p "Choose your install directory. Default (${defaultnpmdir}) : " npmdir
-
 if [ -z ${npmdir} ]; then
     npmdir=${defaultnpmdir}
 else
