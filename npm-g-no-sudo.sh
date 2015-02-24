@@ -138,13 +138,7 @@ echo_env() {
 	printf "${envfix}\n\n" ${npmdir} 
 }
 
-printf "\n\n"
-read -p "Do you wish to update your .bashrc/.zshrc file(s) with the paths and manpaths? [yn] " yn
-case $yn in
-    [Yy]* ) fix_env;;
-    [Nn]* ) echo_env;;
-    * ) echo "Please answer 'y' or 'n'.";;
-esac
+fix_env
 
 rm $to_reinstall
 
